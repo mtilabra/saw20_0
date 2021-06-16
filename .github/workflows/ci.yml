@@ -1,4 +1,4 @@
-name: CI for saw20_0
+name: Continuous integration for SAW template
 
 on:
   push:
