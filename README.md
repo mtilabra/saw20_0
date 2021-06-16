@@ -1,3 +1,5 @@
+[![Continuous integration for SAW template](https://github.com/sawmti/saw20_0/actions/workflows/ci.yml/badge.svg)](https://github.com/sawmti/saw20_0/actions/workflows/ci.yml)
+
 # Project structure
 
 ## Quick start guide
