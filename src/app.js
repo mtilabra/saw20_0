@@ -7,14 +7,11 @@ const root = path.resolve(__dirname, '..')
 app.use(function(req, res, next) { console.log(req.url); next(); });
 app.use(express.static(root + '/public'));
 
-app.get('/api', (req, res) => res.send('GET method'))
-app.get('/api/users', (req,res) => 
- res.send({ users: ['juan', 'jose']})
+app.get('/api/entities', (req,res) => 
+ res.send({ entities: 
+   ['Q2887', 
+    'Q33986'
+   ]})
 );
-
-
-function reverse(str){
-    return str.split("").reverse().join("");
-}
 
 module.exports = app
