@@ -8,9 +8,6 @@ app.use(function(req, res, next) { console.log(req.url); next(); });
 app.use(express.static(root + '/public'));
 
 app.get('/api', (req, res) => res.send('GET method'))
-app.get('/api/reverse/:value', (req, res) => 
-  res.send(reverse(req.params.value))
-);
 app.get('/api/users', (req,res) => 
  res.send({ users: ['juan', 'jose']})
 );

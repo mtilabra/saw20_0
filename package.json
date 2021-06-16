@@ -1,8 +1,8 @@
 {
-  "name": "restapi",
+  "name": "saw_0",
   "version": "1.0.0",
-  "description": "Node.js rest api skeleton",
-  "main": "index.js",
+  "description": "Node.js example skeleton",
+  "main": "server.js",
   "jest": {
     "testEnvironment": "node"
   },

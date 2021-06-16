@@ -1,7 +1,18 @@
-async function getReverse() {
-    let response = await fetch('http://localhost:3000/api/users');
-    let data = await response.json();
+async function getUsers() {
+    const response = await fetch('/api/users');
+    const data = await response.json();
     return data
 }
 
-getReverse().then(data => console.log(data));
+function fillUsers() {
+    getUsers().then(data => {
+        console.log(data.users);
+        const ulElement = document.getElementById("ulUsers");
+        data.users.forEach(user => {
+          const liUser = document.createElement("li");
+          const texto = document.createTextNode(user);
+          liUser.appendChild(texto);
+          ulElement.appendChild(liUser);
+        })
+    })
+}
