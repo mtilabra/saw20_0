@@ -1,5 +1,5 @@
 async function getEntities() {
-    const response = await fetch('/api/entities');
+    const response = await fetch('/api/entities', {mode: 'cors'});
     const data = await response.json();
     return data
 }
